@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B4150FE19E28B860076258E /* CNYNetworkInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4150FC19E28B860076258E /* CNYNetworkInfoManager.m */; };
+		6B41510319E2AA990076258E /* UIColor+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B41510219E2AA990076258E /* UIColor+Conversion.m */; };
 		6B757A9019DE95CB005B8082 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B757A8F19DE95CB005B8082 /* main.m */; };
 		6B757A9319DE95CB005B8082 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B757A9219DE95CB005B8082 /* AppDelegate.m */; };
 		6B757A9619DE95CB005B8082 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B757A9519DE95CB005B8082 /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B4150FC19E28B860076258E /* CNYNetworkInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNYNetworkInfoManager.m; sourceTree = "<group>"; };
+		6B4150FD19E28B860076258E /* CNYNetworkInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNYNetworkInfoManager.h; sourceTree = "<group>"; };
+		6B41510219E2AA990076258E /* UIColor+Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Conversion.m"; sourceTree = "<group>"; };
+		6B41510519E2AAC60076258E /* UIColor+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Conversion.h"; sourceTree = "<group>"; };
 		6B757A8A19DE95CB005B8082 /* UDPTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDPTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B757A8E19DE95CB005B8082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B757A8F19DE95CB005B8082 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +91,10 @@
 				6B757A9219DE95CB005B8082 /* AppDelegate.m */,
 				6B757A9419DE95CB005B8082 /* ViewController.h */,
 				6B757A9519DE95CB005B8082 /* ViewController.m */,
+				6B41510519E2AAC60076258E /* UIColor+Conversion.h */,
+				6B41510219E2AA990076258E /* UIColor+Conversion.m */,
+				6B4150FC19E28B860076258E /* CNYNetworkInfoManager.m */,
+				6B4150FD19E28B860076258E /* CNYNetworkInfoManager.h */,
 				6B757A9719DE95CB005B8082 /* Main.storyboard */,
 				6B757A9A19DE95CB005B8082 /* Images.xcassets */,
 				6B757A9C19DE95CB005B8082 /* LaunchScreen.xib */,
@@ -168,6 +178,7 @@
 				TargetAttributes = {
 					6B757A8919DE95CB005B8082 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = CR2PK929N8;
 					};
 					6B757AA219DE95CB005B8082 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -219,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B41510319E2AA990076258E /* UIColor+Conversion.m in Sources */,
 				6B757A9619DE95CB005B8082 /* ViewController.m in Sources */,
+				6B4150FE19E28B860076258E /* CNYNetworkInfoManager.m in Sources */,
 				6B757A9319DE95CB005B8082 /* AppDelegate.m in Sources */,
 				6B757A9019DE95CB005B8082 /* main.m in Sources */,
 			);
@@ -343,9 +356,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = UDPTester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6ffcb338-f6ca-4434-822a-3ea270128e09";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -353,9 +370,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = UDPTester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6ffcb338-f6ca-4434-822a-3ea270128e09";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -412,6 +433,7 @@
 				6B757AAF19DE95CB005B8082 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B757AB019DE95CB005B8082 /* Build configuration list for PBXNativeTarget "UDPTesterTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +442,7 @@
 				6B757AB219DE95CB005B8082 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
