@@ -41,6 +41,7 @@
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="da2-Cm-RAo">
                                 <rect key="frame" x="16" y="141" width="288" height="203"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="JBK-RR-v7i"/>
                                 </connections>

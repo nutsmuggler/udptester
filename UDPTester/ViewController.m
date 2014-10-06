@@ -249,7 +249,7 @@
 
 - (void)logSuccess:(NSString *)msg
 {
-    [self logText:msg withColor:[UIColor greenColor]];
+    [self logText:msg withColor:[UIColor colorWithRed:0 green:.8 blue:0 alpha:1.0]];
 
 }
 - (void)logText:(NSString *)msg withColor:(UIColor*)color
