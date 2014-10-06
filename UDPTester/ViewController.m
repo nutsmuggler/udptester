@@ -61,7 +61,7 @@
         self.segmentedControl.hidden = YES;
         [self logMessage:@"Working as app"];
     }
-    NSString* testString = @"Testy pants!";
+    NSString* testString = @"Hi there!";
     NSData* testData = [testString dataUsingEncoding:NSUTF8StringEncoding];
     
     
@@ -160,7 +160,7 @@
         else
         {
             NSLog(@"-> Tx: %@",msg);
-            [self logSuccess:[NSString stringWithFormat:@"Sent: %@", msg]];
+            [self logSuccess:[NSString stringWithFormat:@"Sent: %@ on port %i - %@", msg,p, [[CNYNetworkInfoManager sharedInstance] currentNetworkSsid]]];
             return true;
         }
     }
@@ -169,7 +169,6 @@
 #pragma mark - Reception
 
 - (void)startServer {
-    NSLog(@"UDP Server started...");
     
     address_len = sizeof(socket_address);
 
@@ -195,6 +194,12 @@
         close(receivingSocket);
         exit(EXIT_FAILURE);
     }
+    
+
+    NSLog(@"UDP Server started...");
+
+    [self logSuccess:[NSString stringWithFormat:@"Listening on port %i on %@", PORT, [[CNYNetworkInfoManager sharedInstance] currentNetworkSsid]]];
+
     @autoreleasepool {
         [self doReceive];
     }
